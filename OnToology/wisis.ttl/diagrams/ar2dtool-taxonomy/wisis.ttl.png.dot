@@ -1,0 +1,39 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wsis:ResourceConsumer" "wsis:Material" "time:Instant" "saref:FeatureOfInterest" "wsis:RawWater" "wsis:Energy" "wsis:MacroLevelIndicator" "wsis:Salt" "wsis:ResourceDisposal" "geosp:Geometry" "wsis:ResourceOutput" "s4watr:EnergyProperty" "wsis:ResourceUtilization" "sf:Polygon" "sf:Point" "wsis:ResourceConsumption" "wsis:EnvironmentalImpacts" "s4watr:AirProperty" "geosp:SpatialObject" "wsis:KeyPerformanceIndicatorLevel" "time:Interval" "s4watr:Water" "time:TemporalEntity" "wsis:SolutionProvider" "wsis:Air" "wsis:MesoLevelIndicator" "s4watr:MaterialProperty" "geosp:Feature" "wsis:MicroLevelIndicator" "wsis:SolidMaterial" "wsis:SemiSolidMaterial" "wsis:ResourceProducer" "wsis:Industry" "s4watr:WaterProperty" "wsis:Resource" "saref:Property" ; /*classes style*/
+	"wsis:Energy" -> "wsis:Resource" [ label = "rdfs:subClassOf" ];
+	"wsis:Energy" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"s4watr:AirProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"wsis:EnvironmentalImpacts" -> "wsis:KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"wsis:MacroLevelIndicator" -> "wsis:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"s4watr:WaterProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"wsis:Salt" -> "wsis:Material" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceDisposal" -> "wsis:KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceConsumption" -> "wsis:KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"s4watr:Water" -> "wsis:Resource" [ label = "rdfs:subClassOf" ];
+	"s4watr:Water" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"wsis:Material" -> "wsis:Resource" [ label = "rdfs:subClassOf" ];
+	"wsis:Material" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"time:Interval" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"wsis:SemiSolidMaterial" -> "wsis:Material" [ label = "rdfs:subClassOf" ];
+	"geosp:Feature" -> "geosp:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceProducer" -> "wsis:Industry" [ label = "rdfs:subClassOf" ];
+	"wsis:MicroLevelIndicator" -> "wsis:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceOutput" -> "wsis:KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"sf:Polygon" -> "geosp:Geometry" [ label = "rdfs:subClassOf" ];
+	"wsis:Air" -> "wsis:Resource" [ label = "rdfs:subClassOf" ];
+	"wsis:Air" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceUtilization" -> "wsis:KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"sf:Point" -> "geosp:Geometry" [ label = "rdfs:subClassOf" ];
+	"time:Instant" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"wsis:RawWater" -> "s4watr:Water" [ label = "rdfs:subClassOf" ];
+	"wsis:SolidMaterial" -> "wsis:Material" [ label = "rdfs:subClassOf" ];
+	"wsis:MesoLevelIndicator" -> "wsis:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"geosp:Geometry" -> "geosp:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"s4watr:EnergyProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"wsis:SolutionProvider" -> "wsis:Industry" [ label = "rdfs:subClassOf" ];
+	"s4watr:MaterialProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
+	"wsis:ResourceConsumer" -> "wsis:Industry" [ label = "rdfs:subClassOf" ];
+
+}
